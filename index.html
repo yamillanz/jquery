@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery con PHP</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" id="textoBusqueda" placeholder="Busca la información">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="buscar">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid p-4">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="frmDatos">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre de la tarea">
+                                <textarea id="descripcion" class="form-control" cols="30" rows="10"
+                                    placeholder="Descripción de la tarea"></textarea>
+                            </div>
+                            <button id="agregarTareas" type="submit"
+                                class="btn btn-primary btn-block text-center">Agregar</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <div class="card card-body p-4" id="resultadoBusqueda"></div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyTareas">
+                        <tr class="table-dark">
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                        </tr>
+
+                        <tr class="table-dark">
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                            <td>Contenido</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
